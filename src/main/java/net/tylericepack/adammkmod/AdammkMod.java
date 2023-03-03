@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tylericepack.adammkmod.item.ModItems;
 import org.slf4j.Logger;
 
 @Mod(AdammkMod.MODID)
@@ -16,6 +17,8 @@ public class AdammkMod {
     private static final Logger LOGGER = LogUtils.getLogger();
     public AdammkMod(){
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
