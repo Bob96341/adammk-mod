@@ -22,7 +22,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ADAMIUM_BLOCK = registerBlock("adamium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(25f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(50f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> ADAMIUM_ORE = registerBlock("adamium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(10f).requiresCorrectToolForDrops(),
