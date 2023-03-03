@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "adammkmod:block/deepslate_adamium_ore"
+  }
+}

@@ -1,3 +1,7 @@
 {
-  "item.adammkmod.adamium": "Adamium"
+  "item.adammkmod.adamium": "Adamium",
+
+  "block.adammkmod.adamium_block": "Block of Adamium",
+  "block.adammkmod.adamium_ore": "Adamium Ore",
+  "block.adammkmod.deepslate_adamium_ore": "Deepslate Adamium Ore"
 }
