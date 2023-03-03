@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "adammkmod:block/adamium_block",
+    "side": "adammkmod:block/adamium_block",
+    "top": "adammkmod:block/adamium_block"
+  }
+}

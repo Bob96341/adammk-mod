@@ -6,7 +6,9 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,7 +24,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ADAMIUM_BLOCK = registerBlock("adamium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
+                    .strength(80f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    /*public static final RegistryObject<Block> ADAMIUM_STAIRS = registerBlock("adamium_stairs",
+            () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
                     .strength(50f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    */
+    public static final RegistryObject<StairBlock> ADAMIUM_STAIRS = registerBlock("adamium_stairs",
+            () -> new StairBlock(ADAMIUM_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.HEAVY_METAL)
+                    .strength(80f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> ADAMIUM_ORE = registerBlock("adamium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(10f).requiresCorrectToolForDrops(),
